@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+@import "clock.css";
+@import "greetings.css";
+@import "quotes.css";
+@import "todo.css";
+@import "weather.css";
+@import "reset.css";
+
+
+
+
+.hidden{
+    display: none;
+}
+
+body{
+    display: flex;
+    position: relative;
+}
+
+#bg{
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+body> *:not(#bg, script, .hidden) {
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    font-family: 'Gowun Dodum', sans-serif;
+}
